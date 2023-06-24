@@ -1,6 +1,6 @@
 {
     "name": "@vgerbot/use-service-react",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",
@@ -11,10 +11,13 @@
     "files": [
         "dist"
     ],
+    "publishConfig": {
+        "access": "public"
+    },
     "scripts": {
         "test": "cross-env NODE_ENV=test jest",
         "example": "rollup -c ./rollup.config.examples.js",
-        "postinstall": "husky install",
+        "prepare": "husky install",
         "release": "standard-version",
         "commit": "commit",
         "lint": " eslint --no-error-on-unmatched-pattern {src,__test__}/**/*.{js,ts,tsx}",
