@@ -7,6 +7,7 @@
     "browser": "dist/index.umd.js",
     "distDir": "dist/",
     "types": "dist/index.d.ts",
+    "library": "useService",
     "scripts": {
         "test": "cross-env NODE_ENV=test jest",
         "example": "rollup -c ./rollup.config.examples.js",
