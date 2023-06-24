@@ -8,6 +8,9 @@
     "distDir": "dist/",
     "types": "dist/index.d.ts",
     "library": "useService",
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "test": "cross-env NODE_ENV=test jest",
         "example": "rollup -c ./rollup.config.examples.js",
