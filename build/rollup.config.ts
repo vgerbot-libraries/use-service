@@ -28,7 +28,8 @@ const rollupConfig: RollupOptions = {
         }),
         typescript(),
         terser()
-    ]
+    ],
+    external: /node_modules/
 };
 
 export default rollupConfig;
