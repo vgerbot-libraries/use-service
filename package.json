@@ -1,7 +1,7 @@
 {
-    "name": "{{name}}",
+    "name": "@vgerbot/use-service-react",
     "version": "1.0.0",
-    "description": "{{description}}",
+    "description": "",
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",
     "browser": "dist/index.umd.js",
@@ -16,7 +16,7 @@
         "lint": " eslint --no-error-on-unmatched-pattern {src,__test__}/**/*.{js,ts,tsx}",
         "format": "eslint --no-error-on-unmatched-pattern --fix {src,__test__}/**/*.{js,ts,tsx}",
         "build": "cross-env NODE_ENV=production rollup -c ./rollup.config.js",
-        "gendoc": "typedoc ./src  --out dist/docs --name rollup-jest-boilerplate --hideGenerator"
+        "gendoc": "typedoc ./src  --out dist/docs --name use-service --hideGenerator"
     },
     "lint-staged": {
         "{src,test}/**/*.{js,ts,tsx}": [
@@ -26,7 +26,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/y1j2x34/rollup-jest-boilerplate.git"
+        "url": "git+https://github.com/y1j2x34/use-service.git"
     },
     "keywords": [],
     "author": "{{author}}",
@@ -62,7 +62,18 @@
         "zx": "^4.2.0"
     },
     "bugs": {
-        "url": "https://github.com/y1j2x34/rollup-jest-boilerplate/issues"
+        "url": "https://github.com/y1j2x34/use-service/issues"
     },
-    "homepage": "https://github.com/y1j2x34/rollup-jest-boilerplate#readme"
+    "homepage": "https://github.com/y1j2x34/use-service#readme",
+    "dependencies": {
+        "@types/react": "^18.2.8",
+        "@vgerbot/ioc": "vgerbot-libraries/ioc",
+        "mobx": "^6.9.0",
+        "react": "^18.2.0"
+    },
+    "peerDependencies": {
+        "@types/react": "^18.2.8",
+        "mobx": "^6.9.0",
+        "react": "^18.2.0"
+    }
 }
