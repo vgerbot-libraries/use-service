@@ -1,6 +1,6 @@
 {
     "name": "@vgerbot/use-service-react",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "",
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",
@@ -23,7 +23,8 @@
         "lint": " eslint --no-error-on-unmatched-pattern {src,__test__}/**/*.{js,ts,tsx}",
         "format": "eslint --no-error-on-unmatched-pattern --fix {src,__test__}/**/*.{js,ts,tsx}",
         "build": "cross-env NODE_ENV=production rollup -c ./rollup.config.js",
-        "gendoc": "typedoc ./src  --out dist/docs --name use-service --hideGenerator"
+        "gendoc": "typedoc ./src  --out dist/docs --name use-service --hideGenerator",
+        "prepublish": "npm lint && npm run build"
     },
     "lint-staged": {
         "{src,test}/**/*.{js,ts,tsx}": [
