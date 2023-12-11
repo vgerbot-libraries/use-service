@@ -68,8 +68,7 @@ export function renderObserver(render: () => React.ReactElement) {
         Observer,
         {
             render: render
-        },
-        []
+        }
     ) as React.ReactElement
 }
 
